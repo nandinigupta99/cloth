@@ -4,6 +4,7 @@ import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
+import CheckoutPage from "./pages/checkout/checkout.component";
 import SignInSignOut from "./pages/signin-and-signout/signin-and-signout.component";
 
 const HatsPage = (props) => {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/hats" component={HatsPage} />
           <Route path="/shop" component={ShopPage} />
           <Route path="/signin" component={SignInSignOut} />
+          <Route exact path="/checkout" component={CheckoutPage} />
         </Switch>
       </div>
     );
